@@ -107,6 +107,9 @@ headheight=1.8cm]{geometry}
 \newcommand{\palavraschaveVal}{} \newcommand{\keywordsVal}{}
 \newcommand{\palavraschave}[1]{\renewcommand{\palavraschaveVal}{#1}}
 \newcommand{\keywords}[1]{\renewcommand{\keywordsVal}{#1}}
+
+% \newcommand{\autorepigrafe}[1]{{#1}}
+\newcommand{\epigrafeautor}[1]{\def\epigrafeautornome{#1}}
 %% --- FIM: macros seguras (sem @) ---
 
 
@@ -123,7 +126,7 @@ headheight=1.8cm]{geometry}
     \includegraphics[width=\paperwidth]{configs/figuras/cabecalho.png}
   }%
 
-  
+
 \fancyfoot[C]{%
   \begin{tikzpicture}
     \filldraw[fill=fundo_idp, draw=fundo_idp] (0,0) circle (0.4cm);
@@ -164,7 +167,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\capaprincipal}{
     \color{white}
     \begin{titlepage}
-    
+
 
     \vspace*{8.5 cm}
     \begin{flushleft}
@@ -179,14 +182,14 @@ headheight=1.8cm]{geometry}
     }}
 {\Large\bf\expandafter\MakeUppercase\expandafter{\titulonome}}
 
-    
+
     \end{flushleft}
     \vspace*{6 cm}
     \begin{center}
     {\Large\bf\expandafter\MakeUppercase\expandafter{\autornome}}
     \vfill
     {Brasília - DF, \anonome}
-    
+
     \end{center}
     \end{titlepage}
     \color{black}
@@ -204,7 +207,7 @@ headheight=1.8cm]{geometry}
         {\Large\color{fundo_idp}\MakeUppercase\titulonome}
 
         \vspace*{3cm}
- 
+
         \noindent{Undergraduate Thesis submitted in partial fulfillment of the
         requirements for the degree of Bachelor of \nomecursoingles{} at the
         Brazilian Institute of Education, Development and Research (IDP).}
@@ -245,8 +248,8 @@ headheight=1.8cm]{geometry}
 
         \vspace*{1cm}
         {\bfseries\color{fundo_idp}Examining Committee}
-        
-        
+
+
         {
         \vspace*{2cm}
         % \rule{\linewidth}{0.4pt}
@@ -257,7 +260,7 @@ headheight=1.8cm]{geometry}
         % \rule{\linewidth}{0.4pt}
         \vspace{1em}
         {\nomemembrobancai\ (\funcaomembrobancai) - \instbancai}
-        
+
         \vspace*{2cm}
         % \rule{\linewidth}{0.4pt}
         \vspace{1em}
@@ -282,6 +285,20 @@ headheight=1.8cm]{geometry}
     \vspace{1em}
     \input{partes/dedicatoria}
 }
+
+\newcommand{\epigrafe}{
+    \clearpage
+    \vspace*{\fill}
+    \begin{flushright}
+  		\begin{minipage}{.5\textwidth}
+ 			\itshape
+ 			\input{partes/epigrafe}
+
+            \raggedleft -- \epigrafeautornome
+  		\end{minipage}
+    \end{flushright}
+}
+
 
 \newcommand{\resumo}{
     \clearpage
@@ -328,7 +345,7 @@ headheight=1.8cm]{geometry}
 }
 
 
-% Comando para a "página de abertura de seção" CORRIGIDO
+% Comando para a "página de abertura de seção"
 \newcommand{\chapterbreak}[2]{%
     \clearpage
     \thispagestyle{empty}
@@ -344,7 +361,7 @@ headheight=1.8cm]{geometry}
     \vspace*{\fill}
     \clearpage
     \phantomsection
-    \addcontentsline{toc}{section}{\protect\numberline{#1}#2} % CORREÇÃO PRINCIPAL
+    \addcontentsline{toc}{section}{\protect\numberline{#1}#2}
     \color{black}
 }
 
@@ -353,7 +370,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\secao}[2]{%
   \refstepcounter{secnum}%
   \chapterbreak{\arabic{secnum}}{#1}%
-  
+
   \noindent
   \hspace*{-3.5cm}
   \begin{tikzpicture}
@@ -426,7 +443,7 @@ headheight=1.8cm]{geometry}
     \addcontentsline{toc}{section}{References}
 
     \color{black}
-    
+
     \null
     \clearpage
 }
@@ -525,7 +542,7 @@ headheight=1.8cm]{geometry}
 %     \backgroundsumario % Ativa o fundo apenas nesta página
 %     \section*{\contentsname} % Título do sumário
 %     \@starttoc{toc} % Conteúdo do sumário
-   
+
 %     \ClearShipoutPictureBG % Remove o fundo das páginas seguintes
 % }
 
@@ -591,7 +608,7 @@ headheight=1.8cm]{geometry}
     \addcontentsline{toc}{section}{#1}
 
     \color{black}
-    
+
     \null
     \clearpage
 }
@@ -643,8 +660,6 @@ headheight=1.8cm]{geometry}
         \begin{center}
         {\color{fundo_idp}\Large{Annex \MakeUppercase{\alph{anexocount}}} - {#1}}
         \end{center}
-        
+
         \input{#2}
 }
-
-

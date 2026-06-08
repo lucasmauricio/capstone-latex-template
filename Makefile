@@ -22,4 +22,3 @@ cleanall: clean
 	rm -f main.pdf
 
 .PHONY: all clean cleanall
-

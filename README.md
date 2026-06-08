@@ -33,6 +33,14 @@ Os textos de **resumo** e **abstract** devem ser escritos exclusivamente nos arq
 
 > **⚠️ Não altere os nomes desses arquivos.**
 
+## Dedicatória, Agradecimentos e Epígrafe
+
+As páginas de dedicatória, agradecimentos e epígrafe são opcionais.
+Pode incluir qualquer uma delas ou nenhuma. É uma livre escolha da(o) estudante.
+
+Caso não queira incluir alguma dessas seções, basta comentar a linha correspondente 
+ao seu comando no arquivo principal `main.tex`.
+
 ## ✨ Comandos Customizados
 
 Os seguintes comandos foram definidos para facilitar a escrita do documento:
@@ -85,4 +93,3 @@ Você pode usar qualquer distribuição compatível com XeLaTeX. Recomenda-se o 
 
 ### Execução Online
 Temos um [modelo disponível no Overleaf](https://pt.overleaf.com/read/srgxtbvdbdng#effe2a)
-
