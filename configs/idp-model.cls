@@ -271,7 +271,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\agradecimentos}{
     \clearpage
      \begin{flushleft}
-    {\Large\bfseries\color{fundo_idp}\MakeUppercase{Agradecimentos}}
+    {\Large\bfseries\color{fundo_idp}\MakeUppercase{Acknowledgments}}
     \end{flushleft}
     \vspace{1em}
     \input{partes/agradecimentos}
@@ -280,7 +280,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\dedicatoria}{
     \clearpage
      \begin{flushleft}
-    {\Large\bfseries\color{fundo_idp}\MakeUppercase{Dedicatória}}
+    {\Large\bfseries\color{fundo_idp}\MakeUppercase{Dedication}}
     \end{flushleft}
     \vspace{1em}
     \input{partes/dedicatoria}
