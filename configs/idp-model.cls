@@ -178,7 +178,7 @@ headheight=1.8cm]{geometry}
     \vspace*{2.0 cm}
         \AddToShipoutPicture*{
     \put(-3,0){
-    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_tcc.pdf}
+    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_tcc.png}
     }}
 {\Large\bf\expandafter\MakeUppercase\expandafter{\titulonome}}
 
@@ -338,7 +338,7 @@ headheight=1.8cm]{geometry}
  \vspace*{2.0 cm}
         \AddToShipoutPicture*{
     \put(-3,0){
-    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_final.pdf}
+    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_final.png}
     }}
 
 \clearpage
@@ -351,7 +351,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-        \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
+        \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
     }}
     \color{white}
     \vspace*{\fill}
@@ -426,7 +426,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
         }
     }
      \color{white}
@@ -523,7 +523,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\backgroundsumario}{%
     \AddToShipoutPictureBG{%
         \put(0,0){%
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}%
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}%
         }%
     }%
 }
@@ -591,7 +591,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
         }
     }
      \color{white}
