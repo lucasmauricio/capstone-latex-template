@@ -6,13 +6,13 @@ De forma geral, a introdução deve abordar os seguintes elementos:
 
 \begin{itemize}
     \item \textbf{Contextualização}: apresentar o tema, situando-o no contexto social, científico ou tecnológico, de forma a demonstrar sua importância.
-    
+
     \item \textbf{Delimitação do problema}: definir claramente qual é o problema que será investigado, especificando os limites e o foco do estudo.
-    
+
     \item \textbf{Justificativa}: argumentar sobre a relevância do trabalho, destacando sua contribuição teórica, prática, social ou científica.
-    
+
     \item \textbf{Objetivos}: apresentar o \textbf{objetivo geral} e, quando aplicável, os \textbf{objetivos específicos}, que indicam os passos necessários para alcançar o objetivo principal.
-    
+
     \item \textbf{Estrutura do trabalho}: descrever brevemente como o trabalho está organizado, indicando o conteúdo de cada capítulo.
 \end{itemize}
 
@@ -69,3 +69,43 @@ Referências a apêndices é um caso especial, pois essa referência utiliza let
 
 Repare que apenas no primeiro caso o parâmetro que define o label para o Apêndice~\ref{ap:meuapendice} foi informado, e será aquele que poderá ser utilizado com o comando \verb+\ref+.
 
+\subsubsecao{Figuras e tabelas}
+
+Recomendamos utilizar geradores de tabela online como o \url{https://www.tablesgenerator.com/}
+
+Mas não se esqueça que a tabela deve ser formatada conforma as normas da ABNT (ou IEEE, se for o caso).
+
+Veja um exemplo de figura na Figura~\ref{im:exemplo1}.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth,keepaspectratio]{figuras/software.png}
+\caption{Exemplo de imagem}
+\label{im:exemplo1}
+\end{figure}
+
+
+A Tabela~\ref{tab:organizacao_tcc} exibe um exemplo de processo de configuração do seu trabalho usando este \textit{template}.
+
+\begin{table}[ht]
+\centering
+\caption{Sugestão de organização do TCC}
+\label{tab:organizacao_tcc}
+\begin{tabular}{p{3cm} p{6.5cm} p{5.5cm}}
+\hline
+\textbf{Seção} & \textbf{Conteúdo sugerido} & \textbf{Dicas rápidas} \\
+\hline
+Capa & Título completo, nome do autor, orientador, instituição, curso, data & Verificar normas da instituição; título claro e objetivo. \\
+Resumo e Abstract & Resumo em português (150–300 palavras); abstract em inglês & Incluir objetivo, método, resultados principais e palavras-chave. \\
+Sumário & Lista de seções e subseções com numeração e páginas & Gerado automaticamente com \verb|\tableofcontents|; atualizar antes da versão final. \\
+Introdução & Contexto, problema, justificativa, objetivos (geral e específicos), delimitação & Esclarecer relevância e pergunta de pesquisa; indicar estrutura do trabalho. \\
+Revisão bibliográfica & Estado da arte, conceitos-chave, trabalhos relacionados & Organizar por temas; usar citações consistentes (\verb|\cite|). \\
+Metodologia & Descrição do método, amostra, procedimentos, materiais, critérios de análise & Seja detalhado para reprodutibilidade; incluir fluxogramas ou algoritmos se necessário. \\
+Resultados e Discussão & Apresentação dos dados (tabelas/figuras) e interpretação; comparação com a literatura; implicações & Apresentar resultados de forma objetiva e interpretá-los em seguida; discutir limitações. \\
+Conclusão & Síntese das contribuições, resposta à pergunta de pesquisa, recomendações & Evitar incluir dados novos; sugerir trabalhos futuros. \\
+Referências & Lista bibliográfica conforme norma adotada (ABNT ou IEEE) & Usar gerenciador BibTeX e estilo compatível com o template. \\
+Apêndices & Material elaborado pelo autor que complementa o texto: questionários originais, roteiros de entrevistas, códigos-fonte extensos & Identificados como Apêndice A, Apêndice B, etc.; referenciar no texto. \\
+Anexos & Documentos de terceiros ou material não elaborado pelo autor: cópias de leis, regulamentos, relatórios de terceiros & Identificados como Anexo A, Anexo B, etc.; referenciar no texto. \\
+\hline
+\end{tabular}
+\end{table}
