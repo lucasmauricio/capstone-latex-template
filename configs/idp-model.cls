@@ -1,5 +1,5 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{idp-model}[2025/04/28 Classe para trabalhos Tech IDP]
+\ProvidesClass{idp-model}[2026/04/01 Classe para trabalhos Tech IDP]
 \LoadClass[12pt, a4paper]{article}
 \RequirePackage[a4paper, left=3cm, right=2cm, top=3cm, bottom=2cm,
 headheight=1.8cm]{geometry}
@@ -178,7 +178,7 @@ headheight=1.8cm]{geometry}
     \vspace*{2.0 cm}
         \AddToShipoutPicture*{
     \put(-3,0){
-    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_tcc.png}
+    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_tcc.pdf}
     }}
 {\Large\bf\expandafter\MakeUppercase\expandafter{\titulonome}}
 
@@ -338,7 +338,7 @@ headheight=1.8cm]{geometry}
  \vspace*{2.0 cm}
         \AddToShipoutPicture*{
     \put(-3,0){
-    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_final.png}
+    \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_final.pdf}
     }}
 
 \clearpage
@@ -351,7 +351,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-        \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
+        \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
     }}
     \color{white}
     \vspace*{\fill}
@@ -426,7 +426,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
         }
     }
      \color{white}
@@ -523,7 +523,7 @@ headheight=1.8cm]{geometry}
 \newcommand{\backgroundsumario}{%
     \AddToShipoutPictureBG{%
         \put(0,0){%
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}%
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}%
         }%
     }%
 }
@@ -537,13 +537,13 @@ headheight=1.8cm]{geometry}
 
 \makeatletter
 % \renewcommand\tableofcontents{%
-%     \cleardoublepage
-%     \thispagestyle{empty} % Remove cabeçalhos e rodapés
-%     \backgroundsumario % Ativa o fundo apenas nesta página
-%     \section*{\contentsname} % Título do sumário
-%     \@starttoc{toc} % Conteúdo do sumário
+% \cleardoublepage
+% \thispagestyle{empty} % Remove cabeçalhos e rodapés
+% \backgroundsumario % Ativa o fundo apenas nesta página
+% \section*{\contentsname} % Título do sumário
+% \@starttoc{toc} % Conteúdo do sumário
 
-%     \ClearShipoutPictureBG % Remove o fundo das páginas seguintes
+% \ClearShipoutPictureBG % Remove o fundo das páginas seguintes
 % }
 
 \renewcommand\tableofcontents{%
@@ -591,7 +591,7 @@ headheight=1.8cm]{geometry}
     \thispagestyle{empty}
     \AddToShipoutPicture*{
         \put(-3,0){
-            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes2.png}
+            \includegraphics[width=\paperwidth,height=\paperheight]{configs/figuras/capa_secoes.pdf}
         }
     }
      \color{white}
